@@ -20,6 +20,34 @@ public class Main {
    return v;
     }
 
+    public static Vector<Integer> getEvenNumbers(Vector<Integer> v) {
+        Vector<Integer> v2 = new Vector<>();
+        for (Integer a : v) {
+
+        if (a % 2 == 0) {
+            v2.add(a);
+
+        }
+
+
+    }
+      return v2;
+    }
+
+    public static Vector<Integer> getOddNumbers(Vector<Integer> v) {
+        Vector<Integer> v2 = new Vector<>();
+        for (Integer a : v) {
+
+            if (a % 2 == 1) {
+                v2.add(a);
+
+            }
+
+
+        }
+        return v2;
+    }
+
     static void main() {
 
 
@@ -27,6 +55,14 @@ public class Main {
 
       Vector<Integer> v = new Vector<>();
       v=getNumbers();
+      print(v);
+
+      v=getEvenNumbers(v);
+      System.out.println();
+      print(v);
+      v=getNumbers();
+      v=getOddNumbers(v);
+      System.out.println();
       print(v);
         }
     }
