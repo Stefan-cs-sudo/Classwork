@@ -20,21 +20,21 @@ public class Main {
    return v;
     }
 
-    public static Vector<Integer> getEvenNumbers(Vector<Integer> v) {
+    public static Vector<Integer> filterEvenNumbers(Vector<Integer> v) {
         Vector<Integer> v2 = new Vector<>();
         for (Integer a : v) {
 
         if (a % 2 == 0) {
             v2.add(a);
 
-        }
+        } //povesti din foclorul maghiar
 
 
     }
       return v2;
     }
 
-    public static Vector<Integer> getOddNumbers(Vector<Integer> v) {
+    public static Vector<Integer> filterOddNumbers(Vector<Integer> v) {
         Vector<Integer> v2 = new Vector<>();
         for (Integer a : v) {
 
@@ -57,13 +57,17 @@ public class Main {
       v=getNumbers();
       print(v);
 
-      v=getEvenNumbers(v);
+      v= filterEvenNumbers(v);
       System.out.println();
       print(v);
       v=getNumbers();
-      v=getOddNumbers(v);
+      v= filterOddNumbers(v);
       System.out.println();
       print(v);
+     v =getNumbers();
+     v= filterEvenNumbers(v);
+
+
         }
     }
 
