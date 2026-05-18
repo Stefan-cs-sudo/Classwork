@@ -56,7 +56,7 @@ public class Main {
       Vector<Integer> v = new Vector<>();
       v=getNumbers();
       print(v);
-
+      v.stream().forEach(System.out::println);
       v= filterEvenNumbers(v);
       System.out.println();
       print(v);
@@ -66,6 +66,7 @@ public class Main {
       print(v);
      v =getNumbers();
      v= filterEvenNumbers(v);
+
 
 
         }
